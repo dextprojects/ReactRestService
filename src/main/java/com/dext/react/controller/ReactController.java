@@ -3,7 +3,6 @@ package com.dext.react.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,7 +13,6 @@ import com.dext.react.dto.StudentDTO;
 
 @org.springframework.web.bind.annotation.RestController
 @RequestMapping("/react/service")
-@Import(com.dext.react.RootConfig.class)
 public class ReactController {
 
 	@RequestMapping(value = "/getTableData/", method = RequestMethod.GET)
